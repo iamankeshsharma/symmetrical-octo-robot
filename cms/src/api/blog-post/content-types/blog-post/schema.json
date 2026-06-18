@@ -23,11 +23,12 @@
       "type": "text",
       "maxLength": 200
     },
-    "Content": {
-      "type": "blocks"
-    },
     "publishedDate": {
       "type": "date"
+    },
+    "Content": {
+      "type": "text",
+      "required": true
     }
   }
 }
