@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import { getPost } from "@/lib/strapi";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import { Metadata } from "next";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 
 type Props = {
   params: Promise<{
@@ -41,7 +43,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <p className="text-muted-foreground mb-10">{post.Excerpt}</p>
       <article className="prose prose-neutral max-w-none">
-        <BlocksRenderer content={post.Content} />
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.Content}</ReactMarkdown>
       </article>
     </article>
   );

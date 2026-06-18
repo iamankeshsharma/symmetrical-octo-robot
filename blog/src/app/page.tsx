@@ -11,7 +11,7 @@ export default async function Home() {
         <div className="w-full">
           {posts.length &&
             posts.map((post: any, index: number) => (
-              <article key={post?.documentId} className="flex items-end gap-10 border-b pb-6">
+              <article key={post?.documentId} className="flex items-center gap-10 border-b py-6">
                 <span className="text-6xl leading-none shrink-0">
                   {index + 1}
                 </span>
