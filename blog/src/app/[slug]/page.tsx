@@ -9,9 +9,7 @@ type Props = {
   }>;
 };
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
 
   const post = await getPost(slug);
@@ -28,9 +26,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogPostPage({
-  params,
-}: Props) {
+export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
 
   const post = await getPost(slug);
@@ -41,15 +37,12 @@ export default async function BlogPostPage({
 
   return (
     <article className="max-w-3xl mx-auto py-10">
-      <h1 className="text-5xl font-bold mb-4">
-        {post.Title}
-      </h1>
+      <h1 className="text-5xl font-bold mb-4">{post.Title}</h1>
 
-      <p className="text-muted-foreground mb-10">
-        {post.Excerpt}
-      </p>
-
+      <p className="text-muted-foreground mb-10">{post.Excerpt}</p>
+      <article className="prose prose-neutral max-w-none">
         <BlocksRenderer content={post.Content} />
+      </article>
     </article>
   );
 }
