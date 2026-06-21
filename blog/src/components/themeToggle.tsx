@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import useStorage from "@/hooks/localStorage";
 
 export const AVAILABLE_THEMES = ["dark", "light", "system"];
 
@@ -19,10 +20,17 @@ type Props = {
 
 export default function ThemeToggle({ className }: Props) {
   const { theme, setTheme } = useTheme();
+  const [themeValue, setValue] = useStorage('theme', theme);
   const [mounted, setMounted] = useState(false);
+
+  useEffect(()=>{
+    if(theme)
+    setValue(theme);
+  }, [theme]);
 
   useEffect(() => {
     setMounted(true);
+    setTheme(themeValue)
   }, []);
 
   if (!mounted) return null;
