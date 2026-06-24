@@ -135,7 +135,7 @@ export default async function BlogPostPage({ params }: Props) {
                     "text-base",
                     isBlock
                       ? "text-foreground"
-                      : "bg-foreground text-background px-1 rounded",
+                      : "bg-foreground/30 dark:bg-foreground/30 px-1 rounded",
                   )}
                   {...props}
                 >
