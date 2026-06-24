@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
           <div className="w-full flex justify-center items-center">
-            <div className="w-1/2 border-b dark:border-b-white flex justify-between items-center overflow-hidden">
+            <div className="w-full md:w-1/2 border-b dark:border-b-white flex justify-between items-center overflow-hidden">
               <Link className="hover:underline p-3" href={"/"}>Home</Link>
               <ThemeToggle />
             </div>
