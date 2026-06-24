@@ -89,7 +89,11 @@ export default async function BlogPostPage({ params }: Props) {
 
             a: (props) => (
               <a
-                className="text-pretty text-foreground bg-background"
+                className="underline
+                underline-foreground
+                underline-offset-2
+                hover:opacity-80
+                transition-opacity text-pretty text-foreground bg-background"
                 {...props}
               />
             ),
