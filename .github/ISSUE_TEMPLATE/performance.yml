@@ -1,0 +1,21 @@
+name: Performance
+description: Report performance issues.
+title: "[Performance]: "
+labels:
+  - performance
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Performance issue
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested optimization

@@ -1,0 +1,20 @@
+name: Task
+description: Track development tasks.
+title: "[Task]: "
+labels:
+  - task
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Task description
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Implementation
+        - label: Tests
+        - label: Documentation
