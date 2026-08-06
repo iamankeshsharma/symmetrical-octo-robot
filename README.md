@@ -15,3 +15,4 @@ A website developed while learning tech concepts and used stack. Intended to sha
 
 > ESLint and prettier setup from [@iamankeshsharma/eslint-config](https://www.npmjs.com/package/@iamankeshsharma/eslint-config).
 
+Repo: [iamankeshsharma/symmetrical-octo-robot](https://github.com/iamankeshsharma/symmetrical-octo-robot)
