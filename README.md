@@ -12,6 +12,7 @@ A website developed while learning tech concepts and used stack. Intended to sha
 - **Validation:** Zod
 - **Testing:** Vitest + Playwright
 - **Tooling:** ESLint, Prettier, Husky
+- **Deployment:** Frontend(Vercel), CMS(Render)
 
 > ESLint and prettier setup from [@iamankeshsharma/eslint-config](https://www.npmjs.com/package/@iamankeshsharma/eslint-config).
 
