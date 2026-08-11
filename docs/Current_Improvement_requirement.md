@@ -4,15 +4,15 @@ Notes management system intended to provide ability to manage(read, write, draft
 
 ## Requirements
 
-### Home
+### Home (/)
 
 Show catogries/ names of notebooks/articles.
 
-### Topics Listing
+### Topics Listing (/{topic}/)
 
 Show list of all the topics published under that catagory.
 
-### Details
+### Details (/{topic}/{chapter1})
 
 Show content of topic.
 
@@ -25,3 +25,11 @@ Search tool to search topics/notebooks/articles.
 - Design schema for data in cms.
 - Build UI
 - Integrate UI with cms
+
+## Design
+
+[Low Fadality](https://www.figma.com/design/zwnqU84iF66zxhL3qT69Yk/personal-blogging-website?node-id=0-1&t=BrB9BsbXfZFVvY2M-1)
+
+## Important Note
+
+Make sure structure is seo friendly and accessible.
