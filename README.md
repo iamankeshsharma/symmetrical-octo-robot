@@ -37,7 +37,7 @@ A website developed while learning tech concepts and used stack. Intended to sha
     cd symmetrical-octo-robot/cms
     ```
 
-    ***Provide credentials in `.env` as specified in `.env.example`***
+    ***Provide credentials in `.env` as specified in [.env.example](./cms/.env.example)***
 
     ```sh
     pnpm install
@@ -50,7 +50,7 @@ A website developed while learning tech concepts and used stack. Intended to sha
     cd ../blog
     ```
 
-    ***Provide credentials in `.env` as specified in `.env.example`***
+    ***Provide credentials in `.env` as specified in [.env.example](./blog/.env.example)***
 
     ```sh
     pnpm install
