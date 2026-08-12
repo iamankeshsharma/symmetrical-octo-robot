@@ -5,7 +5,7 @@ export default async function Home() {
   const posts = await getPosts();
   return (
       <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black text-black dark:text-white">
-        <main className="flex flex-1 w-full max-w-3xl flex-col items-start justify-start py-8 px-4 md:py-32 md:px-16 bg-white dark:bg-black sm:items-start">
+        <main className="flex flex-1 w-full max-w-1/2 flex-col items-start justify-start py-8 px-4 md:py-32 md:px-16 bg-white dark:bg-black sm:items-start">
           <h1 className="text-2xl md:text-3xl font-bold mb-8">Writings</h1>
 
           <div className="w-full">

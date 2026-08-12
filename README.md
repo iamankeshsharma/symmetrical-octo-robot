@@ -39,6 +39,12 @@ A website developed while learning tech concepts and used stack. Intended to sha
 
     ***Provide credentials in `.env` as specified in [.env.example](./cms/.env.example)***
 
+    ***You'll need to generate some credentials use***
+
+    ```sh
+    node -e "const crypto=require('crypto'); console.log(crypto.randomBytes(32).toString('base64'));"
+    ```
+
     ```sh
     pnpm install
     pnpm dev
