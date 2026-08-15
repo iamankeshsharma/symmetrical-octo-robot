@@ -1,11 +1,12 @@
-const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL;
+const STRAPI_URL = process.env.STRAPI_URL;
+const CACHE_REVALIDATION_INTERVAL = Number(process.env.CACHE_REVALIDATION_INTERVAL ?? 60);
 
 export async function getPosts() {
   const res = await fetch(
     `${STRAPI_URL}/api/blog-posts?sort=publishedDate:desc`,
     {
       next: {
-        revalidate: 60,
+        revalidate: CACHE_REVALIDATION_INTERVAL,
       },
     }
   );
@@ -24,7 +25,7 @@ export async function getPost(slug: string) {
     `${STRAPI_URL}/api/blog-posts?filters[Slug][$eq]=${slug}`,
     {
       next: {
-        revalidate: 60,
+        revalidate: CACHE_REVALIDATION_INTERVAL,
       },
     }
   );
